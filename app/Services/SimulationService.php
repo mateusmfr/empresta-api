@@ -6,7 +6,7 @@ class SimulationService
 {
     public function simulate(array $payload): array
     {
-        $json = file_get_contents(app_path('Data\taxas_instituicoes.json'));
+        $json = file_get_contents(app_path('Data/taxas_instituicoes.json'));
         $simulations = json_decode($json, true);
 
         $loanAmount = $payload['valor_emprestimo'];

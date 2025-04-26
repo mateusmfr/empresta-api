@@ -1,0 +1,10 @@
+ services:
+  laravel:
+    image: bitnami/laravel:latest
+    container_name: empresta-api
+    ports:
+      - '8000:8000'
+    volumes:
+      - .:/app
+    command: >
+      bash -c "composer install && php artisan serve --host=0.0.0.0 --port=8000"
