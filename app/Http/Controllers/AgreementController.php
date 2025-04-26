@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Services\AgreementService;
+use Illuminate\Http\JsonResponse;
 
 class AgreementController extends Controller
 {
@@ -13,7 +14,7 @@ class AgreementController extends Controller
         $this->agreementService = $agreementService;
     }
 
-    public function index()
+    public function index(): JsonResponse
     {
         return response()->json($this->agreementService->getAll());
     }

@@ -2,8 +2,6 @@
 
 namespace App\Services;
 
-use Illuminate\Support\Facades\Storage;
-
 class AgreementService
 {
     public function getAll(): array

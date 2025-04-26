@@ -2,8 +2,6 @@
 
 namespace App\Services;
 
-use Illuminate\Support\Facades\Storage;
-
 class InstitutionService
 {
     public function getAll(): array

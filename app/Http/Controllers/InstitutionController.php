@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Services\InstitutionService;
+use Illuminate\Http\JsonResponse;
 
 class InstitutionController extends Controller
 {
@@ -13,7 +14,7 @@ class InstitutionController extends Controller
         $this->institutionService = $institutionService;
     }
 
-    public function index()
+    public function index(): JsonResponse
     {
         return response()->json($this->institutionService->getAll());
     }
