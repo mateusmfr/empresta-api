@@ -1,4 +1,4 @@
-# Projeto API do processo seletivo da [Empresta](https://empresta.com.br)
+# API do processo seletivo da [Empresta](https://empresta.com.br)
 
 <details>
 <summary><strong>👨‍💻 O que foi desenvolvido</strong></summary><br />
@@ -55,6 +55,19 @@ O Laravel já estará rodando no modo de desenvolvimento.
 Enviei por email o arquivo contendo a collection do [Insomnia](https://insomnia.rest/), com todas as requisições necessárias para testar a API.
 
 Cada rota presente na API está representada na collection, e todas as funcionalidades possuem testes associados para garantir que estão retornando o comportamento esperado.
+
+</details>
+
+<details>
+  <summary><strong>🚀 Testando em ambiente de deploy</strong></summary><br />
+
+Para facilitar ainda mais os testes, disponibilizei uma versão do projeto rodando em um ambiente online.
+
+Enviei por email também o arquivo contendo as requisições apontadas para o ambiente de deploy.
+
+O deploy utiliza um sistema de sleep mode, então o primeiro request pode levar alguns segundos a mais para responder.
+
+O projeto de produção usa exatamente o mesmo código enviado no repositório, sem nenhuma alteração, apenas para permitir o acesso remoto.
 
 </details>
 
